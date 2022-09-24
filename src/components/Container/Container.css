@@ -1,0 +1,35 @@
+.container-container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 500px;
+    background: linear-gradient(180deg, #70f, #40f);
+    background: linear-gradient(180deg, rgb(100, 92, 110), rgb(33, 26, 53));
+}
+
+.droppable-area {
+    /* width: 800px;
+    height: 800px; */
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    /* overflow: hidden; */
+    /* background: rgba(255, 255, 255, 0.2); */
+    /* border-radius: 30px; */
+    margin: 200px;
+}
+
+.book-image {
+  width: 150px;
+  height: 250px;
+  border-radius: inherit;
+  border-radius: 15px;
+  cursor: move;
+}
