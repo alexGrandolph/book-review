@@ -4,7 +4,7 @@ import React from 'react'
 
 
 const BookModal = ({ selectedBook, setSelectedBook}) => {
-  
+  console.log(selectedBook.title)
   function handleClick(event) {
     
     if(event.target.classList.contains('backdrop')){
@@ -16,7 +16,8 @@ const BookModal = ({ selectedBook, setSelectedBook}) => {
   
   return (
     <div className="backdrop" onClick={handleClick}>
-      <img  src={selectedBook} alt="book-modal" />
+      <img  src={selectedBook.cover} alt="book-modal" />
+      <p>{selectedBook.title}</p>
     </div>
   )
 }

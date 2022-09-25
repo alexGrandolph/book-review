@@ -1,4 +1,4 @@
-{
+const books = {
   "books": [
     {
       "cover": "./3-body.png",
@@ -22,3 +22,5 @@
   ]
 
 }
+
+export default books
