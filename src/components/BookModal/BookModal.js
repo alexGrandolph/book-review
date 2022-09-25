@@ -4,8 +4,11 @@ import React from 'react'
 
 const BookModal = () => {
   return (
-    <div>BookModal</div>
+    <div className="backdrop">
+      <img  src="" alt="book-modal" />
+    </div>
   )
 }
 
 export default BookModal
+// src = { selectedImage }
