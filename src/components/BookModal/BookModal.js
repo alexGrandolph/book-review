@@ -19,8 +19,8 @@ const BookModal = ({ selectedBook, setSelectedBook}) => {
       <img  src={selectedBook.cover} alt="book-modal" />
       <div className="book-text">
         <p className="book-title"> {selectedBook.title}</p>
-        <p>Official Alex Ranking: {selectedBook.rating}</p>
-        <p>Official Alex Review: {selectedBook.review}</p>
+        <p className="book-rank"><i className="italics">Official Alex Ranking</i>: {selectedBook.rating}</p>
+        <p className="book-review"><i className="italics">Official Alex Review</i>: {selectedBook.review}</p>
       </div>
     </div>
   )
