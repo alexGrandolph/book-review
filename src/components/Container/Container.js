@@ -12,13 +12,32 @@ const Container = ({ setSelectedBook }) => {
 
   const constraintsRef = useRef(null);
 
+  function handleDoubleClick(event, book) {
+    
+    switch (event.detail) {
+      case 1:
+        console.log("click");
+        break;
+      case 2:
+        console.log("double click");
+        console.log(book);
+        setSelectedBook(book)
+        break;
+      case 3:
+        console.log("triple click");
+        break;
+    }
+  }
 
   return (
     <div className="container-container">
       <motion.div className="droppable-area" ref={constraintsRef}>
-        <motion.img className="book-image" src={TheStand} alt="book-cover-image" drag dragConstraints={constraintsRef} onClick={() => setSelectedBook(TheStand)} />
-        <motion.img className="book-image" src={ThreeBody} alt="book-cover-image" drag dragConstraints={constraintsRef} onClick={() => setSelectedBook(ThreeBody)} />
-        <motion.img className="book-image" src={Hyperion} alt="book-cover-image" drag dragConstraints={constraintsRef} onClick={() => setSelectedBook(Hyperion)} />
+        <motion.img className="book-image" src={TheStand} alt="book-cover-image" drag dragConstraints={constraintsRef} onDoubleClick={() => setSelectedBook(TheStand)} />
+        {/* <motion.img className="book-image" src={TheStand} alt="book-cover-image" drag dragConstraints={constraintsRef} onDoubleClick={handleDoubleClick(TheStand)} /> */}
+        <motion.img className="book-image" src={ThreeBody} alt="book-cover-image" drag dragConstraints={constraintsRef} onDoubleClick={() => setSelectedBook(ThreeBody)} />
+        {/* <motion.img className="book-image" src={ThreeBody} alt="book-cover-image" drag dragConstraints={constraintsRef} onDoubleClick={handleDoubleClick} /> */}
+        <motion.img className="book-image" src={Hyperion} alt="book-cover-image" drag dragConstraints={constraintsRef} onDoubleClick={() => setSelectedBook(Hyperion)} />
+        {/* <motion.img className="book-image" src={Hyperion} alt="book-cover-image" drag dragConstraints={constraintsRef} onDoubleClick={handleDoubleClick} /> */}
       </motion.div>
 
 

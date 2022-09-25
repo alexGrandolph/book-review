@@ -6,7 +6,7 @@ import React from 'react'
 const BookModal = ({ selectedBook, setSelectedBook}) => {
   
   function handleClick(event) {
-    console.log(event.details)
+    
     if(event.target.classList.contains('backdrop')){
       setSelectedBook(null)
     }
