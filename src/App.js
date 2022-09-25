@@ -5,7 +5,7 @@ import BookModal from './components/BookModal/BookModal.js'
 
 function App() {
 
-  const [selctedBook, setSelectedBook] = useState(null)
+  const [selectedBook, setSelectedBook] = useState(null)
 
   return (
     <div className="App">

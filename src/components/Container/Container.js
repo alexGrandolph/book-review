@@ -8,7 +8,7 @@ import Hyperion from '../../assets/images/hyperion.png'
 
 import React from 'react'
 
-const Container = () => {
+const Container = ({ setSelectedBook }) => {
 
   const constraintsRef = useRef(null);
 
@@ -16,9 +16,9 @@ const Container = () => {
   return (
     <div className="container-container">
       <motion.div className="droppable-area" ref={constraintsRef}>
-        <motion.img className="book-image" src={TheStand} alt="book-cover-image" drag dragConstraints={constraintsRef} />
-        <motion.img className="book-image" src={ThreeBody} alt="book-cover-image" drag dragConstraints={constraintsRef} />
-        <motion.img className="book-image" src={Hyperion} alt="book-cover-image" drag dragConstraints={constraintsRef} />
+        <motion.img className="book-image" src={TheStand} alt="book-cover-image" drag dragConstraints={constraintsRef} setSelectedBook={TheStand} />
+        <motion.img className="book-image" src={ThreeBody} alt="book-cover-image" drag dragConstraints={constraintsRef} setSelectedBook={ThreeBody} />
+        <motion.img className="book-image" src={Hyperion} alt="book-cover-image" drag dragConstraints={constraintsRef} setSelectedBook={Hyperion} />
       </motion.div>
 
 
