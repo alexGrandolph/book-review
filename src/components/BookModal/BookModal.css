@@ -16,12 +16,18 @@
   border: 3px solid white;
   background-color: #efe8e8;
 }
-.backdrop p {
+.book-text {
   display: block;
   max-width: 60%;
   max-height: 80%;
   margin: 60px auto;
   box-shadow: 3px 5px 7px rgba(0, 0, 0, 0.5);
   border: 3px solid white;
-  background-color: #efe8e8;
+  background-color: #7a7373ce;
+  
+  text-align: center;
+}
+.book-title {
+  font-size: 4em;
+  padding: 1px;
 }

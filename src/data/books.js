@@ -3,20 +3,20 @@ const books = {
     {
       "cover": "./3-body.png",
       "title": "The Three Body Problem",
-      "Rating": "8",
-      "Review": "Really good book. Wowza"
+      "rating": "8",
+      "review": "Really good book. Wowza"
     },
     {
       "cover": "./the-stand.png",
       "title": "The Stand",
-      "Rating": "9.5",
-      "Review": "Probably the best book"
+      "rating": "9.5",
+      "review": "Probably the best book"
     },
     {
       "cover": "./hyperion.png",
       "title": "Hyperion",
-      "Rating": "6",
-      "Review": "Still reading it, so far kinda mids"
+      "rating": "6",
+      "review": "Still reading it, so far kinda mids"
     }
 
   ]

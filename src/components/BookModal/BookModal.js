@@ -17,7 +17,11 @@ const BookModal = ({ selectedBook, setSelectedBook}) => {
   return (
     <div className="backdrop" onClick={handleClick}>
       <img  src={selectedBook.cover} alt="book-modal" />
-      <p>{selectedBook.title}</p>
+      <div className="book-text">
+        <p className="book-title"> {selectedBook.title}</p>
+        <p>Official Alex Ranking: {selectedBook.rating}</p>
+        <p>Official Alex Review: {selectedBook.review}</p>
+      </div>
     </div>
   )
 }
