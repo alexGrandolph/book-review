@@ -6,11 +6,11 @@ import BookModal from './components/BookModal/BookModal.js'
 function App() {
 
   const [selectedBook, setSelectedBook] = useState(null)
-
+  console.log(selectedBook)
   return (
     <div className="App">
       <Container setSelectedBook={setSelectedBook}/>
-      <BookModal />
+      { selectedBook && <BookModal selectedBook={selectedBook} setSelectedBook={setSelectedBook}/> }
     </div>
   );
 }

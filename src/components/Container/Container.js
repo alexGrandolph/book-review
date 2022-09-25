@@ -16,9 +16,9 @@ const Container = ({ setSelectedBook }) => {
   return (
     <div className="container-container">
       <motion.div className="droppable-area" ref={constraintsRef}>
-        <motion.img className="book-image" src={TheStand} alt="book-cover-image" drag dragConstraints={constraintsRef} setSelectedBook={TheStand} />
-        <motion.img className="book-image" src={ThreeBody} alt="book-cover-image" drag dragConstraints={constraintsRef} setSelectedBook={ThreeBody} />
-        <motion.img className="book-image" src={Hyperion} alt="book-cover-image" drag dragConstraints={constraintsRef} setSelectedBook={Hyperion} />
+        <motion.img className="book-image" src={TheStand} alt="book-cover-image" drag dragConstraints={constraintsRef} onClick={() => setSelectedBook(TheStand)} />
+        <motion.img className="book-image" src={ThreeBody} alt="book-cover-image" drag dragConstraints={constraintsRef} onClick={() => setSelectedBook(ThreeBody)} />
+        <motion.img className="book-image" src={Hyperion} alt="book-cover-image" drag dragConstraints={constraintsRef} onClick={() => setSelectedBook(Hyperion)} />
       </motion.div>
 
 

@@ -2,10 +2,21 @@ import './BookModal.css'
 
 import React from 'react'
 
-const BookModal = () => {
+
+const BookModal = ({ selectedBook, setSelectedBook}) => {
+  
+  function handleClick(event) {
+    console.log(event.details)
+    if(event.target.classList.contains('backdrop')){
+      setSelectedBook(null)
+    }
+
+
+  }
+  
   return (
-    <div className="backdrop">
-      <img  src="" alt="book-modal" />
+    <div className="backdrop" onClick={handleClick}>
+      <img  src={selectedBook} alt="book-modal" />
     </div>
   )
 }
